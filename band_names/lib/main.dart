@@ -1,7 +1,12 @@
-import 'package:band_names/pages/home_page.dart';
+import 'package:band_names/pages/index.dart';
+import 'package:band_names/providers/index.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
-void main() => runApp(const MyApp());
+void main() => runApp(MultiProvider(
+      providers: [ChangeNotifierProvider(create: (_) => SocketService())],
+      child: const MyApp(),
+    ));
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -11,9 +16,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Material App',
-      initialRoute: HomePage.routeName,
+      initialRoute: StatusPage.routeName,
       routes: {
         HomePage.routeName: (_) => const HomePage(),
+        StatusPage.routeName: (_) => const StatusPage(),
       },
     );
   }
