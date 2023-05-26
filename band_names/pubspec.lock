@@ -95,10 +95,10 @@ packages:
     dependency: transitive
     description:
       name: logging
-      sha256: "04094f2eb032cbb06c6f6e8d3607edcfcb0455e2bb6cbc010cb01171dcb64e6d"
+      sha256: "623a88c9594aa774443aa3eb2d41807a48486b5613e67599fb4c41c0ad47c340"
       url: "https://pub.dev"
     source: hosted
-    version: "1.1.1"
+    version: "1.2.0"
   matcher:
     dependency: transitive
     description:
@@ -139,6 +139,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.8.3"
+  pie_chart:
+    dependency: "direct main"
+    description:
+      name: pie_chart
+      sha256: "5dba6d0eb4718e8ed00a9079361cd8947c3f84ac5a5d76f05a27f4ec5e27589e"
+      url: "https://pub.dev"
+    source: hosted
+    version: "5.3.2"
   provider:
     dependency: "direct main"
     description:

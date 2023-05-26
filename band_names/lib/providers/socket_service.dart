@@ -11,6 +11,8 @@ class SocketService with ChangeNotifier {
 
   io.Socket? get socket => _socket;
 
+  Function get emit => _socket!.emit;
+
   set socket(io.Socket? valor) {
     _socket = valor;
     notifyListeners();
@@ -26,7 +28,7 @@ class SocketService with ChangeNotifier {
   }
 
   void _initConfig() {
-    _socket = io.io('http://localhost:3000', {
+    _socket = io.io('http://192.168.1.3:3000', {
       'transports': ['websocket'],
       'autoConnect': true,
     });
