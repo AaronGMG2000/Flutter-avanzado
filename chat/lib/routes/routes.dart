@@ -9,4 +9,4 @@ final Map<String, Widget Function(BuildContext)> appRoutes = {
   UsuariosPage.routeName: (_) => const UsuariosPage(),
 };
 
-String initialRoute = LoginPage.routeName;
+String initialRoute = ChatPage.routeName;
